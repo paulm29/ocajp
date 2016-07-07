@@ -1,5 +1,6 @@
 *.iml
-.idea
-out
-src
+.idea/
+.contents/
+.tests/
+out/
 boyarsky_selikoff
