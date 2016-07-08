@@ -3,7 +3,7 @@ Declare, instantiate, initialize and use a one-dimensional array
  */
 public class Lesson1 {
 
-    public static void main(String... args) {
+    public static void  main(String... args) {
         String[] stringArray = new String[10];
         stringArray[0] = "Hi";
         stringArray[3] = "Greetings";
@@ -32,6 +32,15 @@ public class Lesson1 {
             Passing arguments to an array parameter
          */
         new Lesson1().printValues(new String[]{"Hi","There"});
+
+        /*
+            length of 'blank' array
+         */
+        String[] myStrings = new String[6];
+        System.out.println(myStrings.length); // length is six, not 0
+
+        myStrings[myStrings.length] = "hi"; // ArrayIndexOutOFBounds exception
+        myStrings[myStrings.length-1] = "hi"; // fine
 
         /*
             Copying an array
