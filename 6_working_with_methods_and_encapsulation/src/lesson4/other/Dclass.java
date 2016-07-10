@@ -1,4 +1,6 @@
-package other;
+package lesson4.other;
+
+import lesson4.other.Cclass;
 
 /**
  * Created by paulr on 7/5/2016.

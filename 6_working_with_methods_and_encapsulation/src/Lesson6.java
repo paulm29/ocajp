@@ -1,5 +1,5 @@
 /*
-    Determine the effect upon object references and primitive values
+    6.6 Determine the effect upon object references and primitive values
     when they are passed into methods that change the values
  */
 public class Lesson6 {

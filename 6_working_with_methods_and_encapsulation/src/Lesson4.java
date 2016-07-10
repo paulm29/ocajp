@@ -1,8 +1,10 @@
-import other.Cclass;
-import other.Dclass;
+import lesson4.other.Aclass;
+import lesson4.other.Bclass;
+import lesson4.other.Cclass;
+import lesson4.other.Dclass;
 
 /*
- 6.4 Apply access modifiers
+    6.4 Apply access modifiers
  */
 public class Lesson4 extends Cclass {
 

@@ -1,5 +1,5 @@
 /*
-    Apply the static keyword to methods and fields
+    6.2 Apply the static keyword to methods and fields
  */
 public class Lesson2 {
     public static String myName = "Paul";

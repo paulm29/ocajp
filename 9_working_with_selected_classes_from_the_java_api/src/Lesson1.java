@@ -1,9 +1,7 @@
-package datatypes;
-
 /*
-    Was: Manipulate data using the StringBuilder class and its methods
+    9.1 Manipulate data using the StringBuilder class and its methods
  */
-public class Lesson6 {
+public class Lesson1 {
 
 
     public static void main(String[] args) {

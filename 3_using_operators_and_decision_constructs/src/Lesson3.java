@@ -1,5 +1,5 @@
 /*
-    Test equality between Strings and other objects using == and equals ()
+    Test equality between Strings and lesson4 objects using == and equals ()
 
     Note: covered this earlier
  */

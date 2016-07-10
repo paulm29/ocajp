@@ -1,4 +1,4 @@
-package other;
+package lesson4.other;
 
 /**
  * Created by paulr on 7/5/2016.

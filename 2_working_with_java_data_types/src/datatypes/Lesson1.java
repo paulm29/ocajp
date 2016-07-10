@@ -12,7 +12,7 @@ public class Lesson1
          */
 
         /*
-            Only 2 values. Cannot use 0 or 1 like in other languages.
+            Only 2 values. Cannot use 0 or 1 like in lesson4 languages.
          */
         boolean bt = true;
         boolean bf = false;
@@ -129,7 +129,7 @@ public class Lesson1
                 byte, short, int, long => 0
                 float, double => 0.0
                 char => '\u0000' (NUL)
-                String and other objects => null
+                String and lesson4 objects => null
 
                 Note: values are of the associated type, not the defaults
                 of int and double (for whole numbers and decimals), as per

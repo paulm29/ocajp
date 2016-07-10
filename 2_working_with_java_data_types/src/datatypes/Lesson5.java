@@ -1,7 +1,5 @@
 /*
     2.5 Develop code that uses wrapper classes such as Boolean, Double, and Integer.
-
-    Was: Call methods on objects
  */
 package datatypes;
 
@@ -33,7 +31,6 @@ public class Lesson5 {
     public void doStuff(long l, int i) {
 
     }
-
 
     public static void main(String[] args) {
         Lesson5 lesson5 = new Lesson5();

@@ -1,20 +1,15 @@
-package javabasics;
+package javabasics.lesson5;
 
-/**
- * Created by paulr on 7/4/2016.
+/*
+    An object is eligible for garbage collection when it is no longer
+    reachable, meaning:
+    - the object no longer has any references pointing to it
+    - all references to the object have gone out of scope
  */
 public class GarbageCollection {
 
-    public static void main(String... args) {
+    public void runGc() {
         System.gc(); // only 'suggests' that GC run, not guaranteed
-
-        /*
-        An object is eligible for garbage collection when it is no longer
-        reachable, meaning:
-        - the object no longer has any references pointing to it
-        - all references to the object have gone out of scope
-         */
-
     }
 
     /*
@@ -25,6 +20,6 @@ public class GarbageCollection {
         it. e.g. the program complete the main() method straight away
      */
     protected void finalize() {
-
+        System.out.println("Running finalize");
     }
 }

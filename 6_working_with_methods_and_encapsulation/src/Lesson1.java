@@ -34,11 +34,23 @@ public class Lesson1 {
         }
     }
 
+    /*
+        varargs must always be last, and only one per method
+     */
+    public void printArgs(int specialArg, int... args) {
+        System.out.println(specialArg);
+        for(int arg: args) {
+            System.out.println(arg);
+        }
+    }
+
     public static void main(String[] args) {
         Lesson1 lesson1 = new Lesson1();
         lesson1.voidMethod();
         System.out.println(lesson1.getGreeting());
         System.out.println(lesson1.getGreeting(true));
 
+        lesson1.printArgs(42,12,13,15);
+        // alternatively: lesson1.printArgs(42,new int[]{12,13,15})
     }
 }

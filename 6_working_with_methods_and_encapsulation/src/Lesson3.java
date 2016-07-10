@@ -1,5 +1,5 @@
 /*
-Create and overload constructors; including impact on default constructors
+    6.3 Create and overload constructors; including impact on default constructors
  */
 public class Lesson3 {
     private String nickName;

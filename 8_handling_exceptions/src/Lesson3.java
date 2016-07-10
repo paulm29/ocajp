@@ -3,7 +3,7 @@
 
     Advantages:
     - separate 'happy path' code from 'sad path' making code easier to understand
-    and more robust way of dealing with bugs and other problems
+    and more robust way of dealing with bugs and lesson4 problems
  */
 public class Lesson3 {
 }

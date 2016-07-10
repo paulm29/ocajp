@@ -23,7 +23,7 @@ public class Lesson2 {
 
         /*
             Expression statements in initialization section,
-            Cannot declare variables; must do one or the other.
+            Cannot declare variables; must do one or the lesson4.
 
             Expression statement only can occur in the third section.
             They run at the end of the loop iteration
@@ -61,7 +61,7 @@ public class Lesson2 {
 
         /*
             Enhanced for loop
-            Works for arrays, lists, and other ordered collections;
+            Works for arrays, lists, and lesson4 ordered collections;
             anything that implements the Iteratable interface (with hasNext() / next())
          */
         String[] stuff = new String[] {"a","b","c"};

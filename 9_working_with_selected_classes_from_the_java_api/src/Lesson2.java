@@ -1,12 +1,10 @@
 /*
-    Was 2.7 Creating and manipulating Strings
+    9.2 Creating and manipulating Strings
  */
-
-package datatypes;
 
 import java.util.Date;
 
-public class Lesson7 {
+public class Lesson2 {
 
     public static void main(String... args) {
         /*
