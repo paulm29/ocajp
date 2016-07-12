@@ -1,4 +1,4 @@
-package datatypes;
+package datatypes.lesson1;
 
 /*
     - Widening is also known as Promotion, and occurs when two data
@@ -43,7 +43,7 @@ public class WideningAndNarrowing {
             short, float, double
          */
         short x3 = 14;
-        float y3= 13; // does compile, because int literal promoted to float
+        float y3 = 13; // does compile, because int literal promoted to float
         double z3 = 30;
 
         /*

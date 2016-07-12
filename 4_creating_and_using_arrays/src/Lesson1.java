@@ -1,5 +1,5 @@
 /*
-Declare, instantiate, initialize and use a one-dimensional array
+    4.1 Declare, instantiate, initialize and use a one-dimensional array
  */
 public class Lesson1 {
 
@@ -19,7 +19,6 @@ public class Lesson1 {
             A longer syntax using new type[] { }
          */
         boolean[] booleanArray = new boolean[] {true,false};
-
 
         /*
             The trailing comma is NOT a mistake!

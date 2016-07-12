@@ -76,7 +76,7 @@ public class Lesson2 {
     }
 
     /*
-     passing by value, not reference, myName in main() is not changed
+        passing by value, not reference, myName in main() is not changed
       */
     public void sayHello(String myName) {
         myName = "Hello " + myName;

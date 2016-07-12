@@ -1,16 +1,23 @@
+/*
+    5.2 Create and use for loops including the enhanced for loop
+ */
 import java.util.ArrayList;
 import java.util.List;
 
-/*
-Create and use for loops including the enhanced for loop
- */
 public class Lesson2 {
 
     public static void main(String[] args) {
 
+        /*
+            For loop has three parts:
+            1. Initialization
+            2. Test, AKA Condition
+            3. Increment (or decrement)
+         */
+
         for(int i = 0; i <5; i++) {
             System.out.println(i);
-        }
+        } // brackets optional with a single line
 
         /*
             Multiple initializations
@@ -49,6 +56,10 @@ public class Lesson2 {
             break;
         }
 
+        for(int i = 0;;) {
+            break;
+        }
+
         for(;1==1;) {
             break;
         }
@@ -76,6 +87,10 @@ public class Lesson2 {
             String s = (String)o;
         }
 
+        /*
+            Cannot modify list when using enhanced for, but can with other loops
+            Exception is java.util.ConcurrentModificationException
+         */
         List<String> strings = new ArrayList<String>();
         strings.add("a");
         strings.add("b");

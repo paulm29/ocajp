@@ -7,6 +7,9 @@
  */
 package javabasics;
 
+/*
+    Classes can only be public or default (package) access
+ */
 public class Lesson1 {
 
     public static int a = 77; // class scope: Lesson1.y
@@ -19,9 +22,9 @@ public class Lesson1 {
     }
 
     /*  <access> <optional> <return type>
-        access modifier can come before optional modifier.
+        optional modifier can come before optional modifier.
         access = private, (blank) default, protected, public
-        optional = final, abstract, default (and a few others out of score for OCA)
+        optional = final, abstract (and a few others out of scope for OCA)
      */
     // public void final doStuff2() {} // compile error; return type must come last
     public final void doStuff2() {}

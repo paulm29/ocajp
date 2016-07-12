@@ -8,6 +8,17 @@ public class Lesson2 {
 
     public static void main(String... args) {
         /*
+            Strings are immutable
+         */
+        // myString and myString2 point to same object
+        String myString = new String("Hello");
+        String myString2 = myString;
+        myString += " World!";  // myString now points to new object
+        System.out.println("Strings are different:");
+        System.out.println(myString);
+        System.out.println(myString2);
+
+        /*
             A few ways to create a string - not exhaustive
          */
         String s = "Hello, World";
@@ -56,6 +67,7 @@ public class Lesson2 {
             .startsWith
             .endsWith
             .contains
+            https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html
          */
     }
 }

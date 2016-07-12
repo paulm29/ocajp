@@ -1,10 +1,10 @@
+/*
+    7.5 Use abstract classes and interfaces
+ */
 import lesson5.House;
 import lesson5.Stark;
 import lesson5.interfaces.TerminatorTransformer;
 
-/*
- Use abstract classes and interfaces
- */
 public class Lesson75 {
 
     public static void main(String[] args) {
@@ -16,7 +16,8 @@ public class Lesson75 {
         stark.showBanner();
 
         /*
-        Interfaces
+            Interfaces
+            - See TerminatorInterface for most of the notes
          */
         TerminatorTransformer tt = new TerminatorTransformer();
         tt.transform();

@@ -15,11 +15,13 @@ public class Lesson4 {
         while vs for
         ---
         work the same, but for is more compact
-
-        while vs enhanced for
-        ---
      */
     public static void main(String[] args) {
+
+        /*
+            Old style iteration of collection using iterator()
+            versus for-each
+         */
         List<String> list = new ArrayList<String>();
         list.add("a");
         list.add("b");
@@ -29,6 +31,14 @@ public class Lesson4 {
             System.out.println(it.next());
         }
 
+        // much simpler!
+        for(String s: list) {
+            System.out.println(s);
+        }
+
+        /*
+            Tricky way of using while
+         */
         String[] strings = {"c","d"};
         int i = 0;
         while(i < strings.length) {

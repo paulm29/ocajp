@@ -9,9 +9,8 @@ public class Lesson2 {
     }
 
     public String getNickname() {
-        return "God";
+        return "Superman";
     }
-
 
     public static void main(String[] args) {
 
@@ -22,11 +21,35 @@ public class Lesson2 {
 
         System.out.println(myName);
         System.out.println(getMyName());
-        // these also work
+        // these also work, both class and instance reference
         System.out.println(Lesson2.getMyName());
         System.out.println(lesson2.getMyName());
+
+        /*
+            subclass getMyName hides parent's method
+         */
+        SubClass subClass = new SubClass();
+        System.out.println(subClass.getMyName());
+
+        /*
+            Because reference is to parent class, its method will be called.
+            This is different to method overriding.
+         */
+        Lesson2 subClass2 = new SubClass();
+        System.out.println(subClass2.getMyName());
     }
+
 
 }
 
+class SubClass extends Lesson2 {
+    /*
+        the parent version of myName and getMyName is hidden
+     */
+    public static String myName = "Bob";
+
+    public static String getMyName() {
+        return myName;
+    }
+}
 

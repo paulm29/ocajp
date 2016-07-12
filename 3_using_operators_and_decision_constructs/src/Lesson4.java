@@ -1,36 +1,47 @@
 /*
-    Create if and if/else and ternary constructs
+    3.4 Use a switch statement
  */
 public class Lesson4 {
 
-    public static void main(String[] args) {
 
-        int guess = (int)(Math.random()*10);
-        System.out.println(guess);
-
-        int num = 5;
-        if(guess > num) {
-            System.out.println("Too high");
-        }
-        else if (guess < num) {
-            System.out.println("Too low");
-        }
-        else {
-            System.out.println("You guessed correct");
-
-            // nested if
-            if(true) {
-                System.out.println("You are so clever");
-            }
-        }
+    public static void main(String... args) {
 
         /*
-            This syntax, without braces, is valid too,
-            but it against convention and can introduce bugs
-            Only one line inside the if statement is allowed
-         */
-        if(guess == 42)
-            System.out.println("That is the meaning of life");
-            System.out.println("This is not inside the if!!!");
+            Switch data types: byte, short, char, int, String, enum
+            and related wrapper classes: Byte, Short, Character, Integer.
+
+            Not supported: boolean, long, float, double, and associated
+            wrappers.
+
+            The values for case should be literals or constants (final variables)
+            of the same type, or enum. They cannot be variables.
+
+            Break is needed to stop executing 'falling through'.
+            Break should nearly always be used
+
+            default should always be used. It doesn't have to be the last case
+        */
+
+        int num = 2;
+        //int num = 5; // will use default
+        switch(num) {
+            case 1:
+            case 2:
+                System.out.println("2");
+                //break;
+            case 3:
+                System.out.println("3");
+                System.out.println("Either  1, 2 or 3");
+                //break;
+            case 4:
+                System.out.println("3");
+                break;                      // break here
+            default:
+                System.out.println("default");
+                break;
+        }
+
+
+
     }
 }

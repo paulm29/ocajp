@@ -1,10 +1,10 @@
+/*
+    7.3 Determine when casting is necessary
+ */
 import lesson2.Animal;
 import lesson2.Cat;
 import lesson2.Dog;
 
-/*
- Determine when casting is necessary
- */
 public class Lesson73 {
 
     public static void main(String[] args) {
@@ -18,14 +18,14 @@ public class Lesson73 {
         System.out.println(cat.getClass().getName());
         System.out.println(cat.getClass().getSuperclass().getName());
 
-        /* Rose */
+        /* Dog */
         System.out.println(dog.getClass().getName());
 
         if (cat instanceof Cat) {
-            System.out.println("Cat instance of House");
+            System.out.println("instance of Cat");
         }
         if (cat instanceof Animal) {
-            System.out.println("Cat instance of House");
+            System.out.println("instance of Animal");
         }
 
        /*
@@ -44,10 +44,7 @@ public class Lesson73 {
 
         Cat cat4 = new Cat();
         Animal animal4 = cat4;
-        //Rose dog4 = (Rose)animal4;  // class cast exception
+        //Dog dog4 = (Dog)animal4;  // class cast exception
         //dog4.talk();
-
-
-
     }
 }

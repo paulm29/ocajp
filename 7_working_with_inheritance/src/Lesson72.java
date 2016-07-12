@@ -1,11 +1,11 @@
+/*
+    7.2 Develop code that demonstrates the use of polymorphism; including
+    overriding and object type versus reference type
+ */
 import lesson2.Animal;
 import lesson2.Cat;
 import lesson2.Dog;
 
-/*
-    Develop code that demonstrates the use of polymorphism; including
-    overriding and object type versus reference type
- */
 public class Lesson72 {
 
     public static void main(String[] args) {

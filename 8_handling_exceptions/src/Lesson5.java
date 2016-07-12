@@ -16,6 +16,9 @@ public class Lesson5 {
         - OutOfMemoryError: too many objects created and not GC'ed
         - StackOverflow: too much recursion
      */
+    private static void errors() {
+
+    }
 
     /*
         Checked Exception:
@@ -25,9 +28,12 @@ public class Lesson5 {
         - URISyntaxException
         - XMLParseException
      */
+    private static void checkedExceptions() {
+
+    }
 
     /*
-        Uncheck/Runtime Exceptions
+        Unchecked/Runtime Exceptions:
         - NullPointerException: object is null, but method called on it
         - ArithmeticException: division by zero or modulus
         - ArrayIndexOutOfBoundsException: array not large enough for idnex
@@ -37,9 +43,8 @@ public class Lesson5 {
         - NumberFormatException: when parsing values of incompatible types
      */
 
-    public static void main(String[] args) {
-
-        /*
+    private static void runtimeExceptions() {
+         /*
             NullPointerException
          */
         List<Integer> heights = new ArrayList<>();
@@ -60,5 +65,9 @@ public class Lesson5 {
          */
         int bad1 = Integer.parseInt("a"); // primitive
         Integer bad2 = Integer.valueOf("123.45"); // Wrapper class
+    }
+
+    public static void main(String[] args) {
+        runtimeExceptions();
     }
 }

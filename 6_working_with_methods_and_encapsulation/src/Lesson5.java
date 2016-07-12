@@ -16,7 +16,18 @@
     letter of the property in uppercase, followed by the rest of the property name.
  */
 public class Lesson5 {
+    private boolean gotFan;
+
+    public boolean isGotFan() {
+        return gotFan;
+    }
+
+    public void setGotFan(boolean gotFan) {
+        this.gotFan = gotFan;
+    }
+
     private int x;
+
     public static final String CONSTANT = "constant";
 
     public void setX(int x) {
@@ -35,6 +46,8 @@ public class Lesson5 {
     }
 
     public static void main(String[] args) {
-
+        Lesson5 lesson5 = new Lesson5();
+        lesson5.setX(100);
+        lesson5.setGotFan(true);
     }
 }

@@ -7,8 +7,8 @@ public class Lesson1
 {
     public void doStuff() {
         /*
-        Variables must start with: _, $, or letter
-        Other characters may be: _, $, letters, numbers
+            Variables must start with: _, $, or letter
+            Other characters may be: _, $, letters, numbers
          */
 
         /*
@@ -18,9 +18,9 @@ public class Lesson1
         boolean bf = false;
 
         /*
-         8 bits
-         -128 to +127
-         XXXX after \ u
+             8 bits
+             -128 to +127
+             XXXX after \ u
          */
         byte b = 0b00001111;
 
@@ -116,9 +116,9 @@ public class Lesson1
          */
 
         /*
-        Null
-        int value = null; // DOES NOT COMPILE
-        String s = null;
+            Null
+            int value = null; // DOES NOT COMPILE
+            String s = null;
          */
 
         /*

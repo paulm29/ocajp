@@ -1,8 +1,8 @@
-import java.io.IOException;
-
 /*
     8.4 Create and invoke a method that throws an exception
  */
+import java.io.IOException;
+
 public class Lesson4 {
 
     // same as method from lesson 1

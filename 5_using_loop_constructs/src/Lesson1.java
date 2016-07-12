@@ -1,5 +1,5 @@
 /*
-    Create and use while loops
+    5.1 Create and use while loops
  */
 public class Lesson1 {
 

@@ -2,8 +2,21 @@
     Lesson 8.3 Describe the advantages of Exception handling
 
     Advantages:
-    - separate 'happy path' code from 'sad path' making code easier to understand
-    and more robust way of dealing with bugs and lesson4 problems
+    - separate 'happy path' code from 'sad path' making the program easier to
+    understand and debug
  */
 public class Lesson3 {
+
+    public static void main(String[] args) {
+
+        try {
+            // happy path
+        }
+        catch(Exception e) {
+            // deal with any problems
+        }
+        finally {
+            // close any resources
+        }
+    }
 }

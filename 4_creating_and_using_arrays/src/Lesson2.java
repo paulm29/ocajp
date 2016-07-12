@@ -1,5 +1,5 @@
 /*
-    Declare, instantiate, initialize and use multi-dimensional array
+    4.2 Declare, instantiate, initialize and use multi-dimensional array
  */
 public class Lesson2 {
 
@@ -33,11 +33,12 @@ public class Lesson2 {
         };
 
         char[][] board4 = new char[3][4];
-
         /*
-         this is valid also. the 2nd dimension still needs to be instantiated
+            This is valid, however the 2nd dimension still needs to be instantiated
           */
         char[][] board5 = new char[3][];
+        //char[][] board5b = new char[][3]; // can't do this though
+        //char[][] board5c = new char[][]; // have to actually instantiate it
 
         /* a 3d array */
         char[][][] board6;
@@ -48,6 +49,9 @@ public class Lesson2 {
         /* player 2 */
         board[1][1] = 'O'; // naught in the middle
 
+        /*
+            print the board
+         */
         for (char[] row : board) {
             for (char column : row) {
                 System.out.print(column);

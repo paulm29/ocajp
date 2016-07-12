@@ -3,8 +3,11 @@
  */
 public class Lesson1 {
 
-    public static void main(String[] args) {
-        /*
+    /*
+        3.1.1 operators, operands and expressions
+     */
+    public static void part1() {
+         /*
             Three operators:
             - infix: expr <op> expr, e.g. 2 + 2
             - prefix: <op> expr, e.g. -5
@@ -25,7 +28,12 @@ public class Lesson1 {
         System.out.println(a--); // 5; get value of a, then decrement
 
         System.out.println(a); // 4
+    }
 
+    /*
+        3.1.2 arithmetic operators and operator precedence
+     */
+    public static void part2() {
         /*
             Operators:
             + add
@@ -33,14 +41,6 @@ public class Lesson1 {
             * multiply
             % modulo
          */
-
-        /*
-            + with Strings
-         */
-        int b = 3; // b will be converted to a String
-        System.out.println("A string " + b);
-        System.out.println("Hello " + 1 + 2); // all a String
-        System.out.println(1 + 2 + " Hello"); // 3 Hello
 
         /*
             modulo
@@ -53,9 +53,43 @@ public class Lesson1 {
             System.out.println("Number is odd");
         }
 
-
         /*
-            Promoting operands
+            Precedence
+            ---
+            Brackets: ( )
+            Unary: + - i++ i-- !
+            * /
+            + -
+         */
+
+
+        int x = 3;
+        int y = ++x * 5 / x-- + --x;
+        // same as y = 4 * 5 / 4 + -2
+        System.out.println("x is " + x);
+        System.out.println("y is " + y);
+    }
+
+    /*
+        3.1.3 String concatenation using +
+     */
+    public static void part3() {
+        /*
+            + with Strings
+         */
+        int b = 3; // b will be converted to a String
+        System.out.println("A string " + b);
+        System.out.println("Hello " + 1 + 2); // all a String
+        System.out.println(1 + 2 + " Hello"); // 3 Hello
+    }
+
+    /*
+        3.1.4 Promoting operands
+     */
+    public static void part4() {
+        /*
+            By default, whole number literals are ints and decimal numbers
+            are double.
             Results of operators are only:
             - int
             - long
@@ -74,8 +108,12 @@ public class Lesson1 {
         short s = 99;
         byte b2 = 10;
         //s = s + b2; // compiler error, incompatible types, int required
+    }
 
-
+    /*
+        3.1.5 increment and decrement
+     */
+    public static void part5() {
         /*
             Increment and Decrement
             Remember prefix and postfix forms:
@@ -125,7 +163,12 @@ public class Lesson1 {
          */
         short t = 10, u = 0;
         u = ++t; // short is okay, no compiler error because int is NOT expected
+    }
 
+    /*
+        3.1.6 Shift operators
+     */
+    public static void part6() {
         /*
             Shift operators
             Unlikely to be in exam, but just in case
@@ -141,9 +184,13 @@ public class Lesson1 {
 
             No code below, because extra unlikely to be on exam
          */
+    }
 
+    /*
+        Comparison operators
+     */
+    public static void part7() {
         /*
-            Comparison operators
             < <= > >=
             == !=
 
@@ -163,11 +210,13 @@ public class Lesson1 {
         Integer i3 = 1;
         Integer i4 = 1;
         System.out.println((i3 == i4)); // true
+    }
 
+    /*
+         Logical operators, including short-circuited
+     */
+    public static void part8() {
         /*
-            Logical operators
-
-            Boolean operators:
             ! NOT
             & AND
             | OR
@@ -190,14 +239,19 @@ public class Lesson1 {
         int x = 6;
         boolean y = (x >= 6) || (++x <= 7);
         System.out.println(x);
+    }
 
-        /*
+    /*
+        3.1.9 Assignment operators
+     */
+    public static void part9() {
+       /*
         Shortcut declarations and assignments
         */
         int x1,y1,z1;
         x1 = y1 = z1 = 0;
 
-        x += 6;
+        x1 += 6;
         /*
             Assignment operators:
             += -= *= /=
@@ -270,19 +324,24 @@ public class Lesson1 {
         //int animal = (y < 91) ? 9 : "Horse"; // DOES NOT COMPILE
 
         /*
-            Be careful, because the option which isn't true won't run
+            Be careful, because one branch won't run
          */
         int y2 = 1;
         int z2 = 1;
         final int x2 = y2<10 ? y2++ : z2++;
         System.out.println(y2+","+z2); // Outputs 2,1
+    }
 
+    /*
+        3.1.10 Other operators
+     */
+    public static void part10() {
 
         /*
-            Other operators:
             - instanceof
             - dot (no code below)
-            - [] subscript operator (no code below)
+            - [] subscript operator (no code below, but can act as () for operator
+               precedence)
          */
         Integer iobj = new Integer(99);
         boolean isObject = iobj instanceof Object ? true : false; // true
@@ -291,7 +350,18 @@ public class Lesson1 {
         System.out.println(isObject2);
         boolean isNumber = iobj instanceof Number ? true : false; // true
         System.out.println(isNumber);
+    }
 
-
+    public static void main(String[] args) {
+        part1(); // operators, operands and expressions
+        part2(); // arithmetic operators and operator precedence
+        part3(); // String concatenation using +
+        part4(); // Promoting operands
+        part5(); // Increment and Decrement
+        part6(); // Shift operators
+        part7(); // Comparison operators
+        part8(); // Logical operators
+        part9(); // Assignment operators
+        part10(); // Other operators
     }
 }

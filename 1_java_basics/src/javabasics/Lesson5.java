@@ -5,8 +5,9 @@
 
 /*
     Benefits of Java:
-    - object-oriented
     - encapsulation
+    - object-oriented
+    - performance
     - platform independent
     - robust
     - simple
@@ -17,23 +18,24 @@
     Java combines benefits of compiled and interpreted languages. This results
     in high performance and portability.
 
-    Performance
+    Encapsulation
     ---
-    - JVM faster than interpreted language
-    - multi-threaded, using multiple CPU cores
-    - in some circumstances, JVM can dynamically convert Java bytecode to native code
+    - aspect of object-orientation
+    - 'safer' programming, reduces coupling, reduces bugs
 
     Object-oriented
     ---
     - objects have state and manage own state
     - rather than procedural; more representative of problem domain
     - lower coupling, higher cohesion, changes more isolated
+    - greater re-use
     - less and easier maintenance
 
-    Encapsulation
+    Performance
     ---
-    - aspect of object-orientation
-    - 'safer' programming, reduces coupling, reduces bugs
+    - JVM faster than interpreted language
+    - multi-threaded, using multiple CPU cores
+    - in some circumstances, JVM can dynamically convert Java bytecode to native code
 
     Platform independent
     ---
@@ -43,15 +45,15 @@
     Robust
     ---
     - no memory-management, like pointers in C
-     - garbage-collection, JVM automatically deallocates un-used objects
-
-    Simple
-    ---
-    - no pointers or operator overloading
+    - garbage-collection, JVM automatically deallocate un-used objects
 
     Secure
     ---
     - runs inside the JVM limiting access to operating system
+
+    Simple
+    ---
+    - no pointers or operator overloading
 */
 package javabasics;
 
