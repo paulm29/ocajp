@@ -15,6 +15,13 @@ public class Lesson2 {
     private static final String FILENAME = "C:\\projects\\ocajp\\8_handling_exceptions\\src\\filename.txt";
 
 
+    /*
+        First catch block should be more specific than the next otherwise
+        compile error with unreachable code.
+
+        Note: If both catch and finally throw an exception, the one from finally
+        gets thrown.
+     */
     private void tryCatchFinally() {
         /*
             try is the happy path
@@ -24,13 +31,13 @@ public class Lesson2 {
         try {
              scanner = new Scanner(new FileReader(FILENAME));
         }
-        catch(IOException ioe) { // specific exception
+        catch(IOException ioe) { // specific exception first
             /*
                 IOException must be possible in try
              */
             ioe.printStackTrace();
         }
-        catch(Exception e) { // broader exception
+        catch(Exception e) { // broader exception next
             e.printStackTrace();
         }
         finally {
@@ -62,7 +69,7 @@ public class Lesson2 {
     /*
         Try with resources can be used with class that implement
         auto-closeable. A finally block is inserted by the compiler and the
-        resource closed.
+        resource closed. Both catch and finally are not needed.
     */
     private void tryWithResources() throws Exception {
 
@@ -79,6 +86,31 @@ public class Lesson2 {
         }
     }
 
+    /*
+        Sybex (p. 313)
+     */
+    private String complexExample() {
+            String result = "";
+            String v = null;
+            try {
+                try {
+                    result += "before";
+                    v.length();
+                    result += "after";
+                    } catch (NullPointerException e) {
+                     result += "catch";
+                    throw new RuntimeException();
+                     } finally {
+                    result += "finally";
+                    throw new Exception();
+                     }
+                 } catch (Exception e) {
+                 result += "done";
+                 }
+             return result;
+
+    }
+
 
     public static void main(String[] args) {
         /*
@@ -86,11 +118,16 @@ public class Lesson2 {
             - try + catch
             - try + finally
             - try + catch (1 or more) + finally
+
+            try without catch or finally is a compile error
          */
 
         Lesson2 lesson2 = new Lesson2();
         lesson2.tryCatchFinally();
 
+        /*
+            Note: braces are required for try and catch even though only one line
+         */
         try {
             lesson2.throwsException();
         } catch(IOException ioe) {
@@ -104,5 +141,10 @@ public class Lesson2 {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+
+        String result = lesson2.complexExample();
+        System.out.println(result);
+
     }
 }

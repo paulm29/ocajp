@@ -15,6 +15,7 @@ public class Lesson5 {
         - AssertionError: when assertions turn on and used
         - OutOfMemoryError: too many objects created and not GC'ed
         - StackOverflow: too much recursion
+        - ExceptionInIntitalizerError
      */
     private static void errors() {
 
@@ -22,7 +23,9 @@ public class Lesson5 {
 
     /*
         Checked Exception:
-        - IOException: base class for many file-related exceptions
+        - IOException: base class for many file-related exceptions. Often coded
+            by programmer.
+            - FileNotFoundException
         - SOAPException
         - SQLException
         - URISyntaxException
@@ -34,13 +37,16 @@ public class Lesson5 {
 
     /*
         Unchecked/Runtime Exceptions:
-        - NullPointerException: object is null, but method called on it
+
         - ArithmeticException: division by zero or modulus
-        - ArrayIndexOutOfBoundsException: array not large enough for idnex
-        - ClassCastException: inappropriate cast
-        Others:
+        - ArrayIndexOutOfBoundsException: array not large enough for index
         - ArrayStoreException: array cannot store type of object. e.g. below
-        - NumberFormatException: when parsing values of incompatible types
+        - ClassCastException: inappropriate cast
+        - IllegalArgumentException: user-defined exception for then caller
+            passes invalid arguments to a method
+        - NullPointerException: object is null, but method called on it
+        - NumberFormatException: when parsing values of incompatible types, often
+            user defined
      */
 
     private static void runtimeExceptions() {

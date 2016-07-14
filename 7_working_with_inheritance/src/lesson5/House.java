@@ -1,8 +1,5 @@
 package lesson5;
 
-/**
- * Created by paulr on 7/7/2016.
- */
 public abstract class House {
     String banner;
     String name;
@@ -11,7 +8,13 @@ public abstract class House {
         Subclasses must define implementation
      */
     //  private abstract void showBanner(); // must be public
-    public abstract void showBanner();
+
+    /*
+        Throws declaration need not be implemented. A more specific exception
+        can be thrown or none at all. A broader exception cannot be used though.
+        e.g. IOException can NOT be overriden with Exception
+     */
+    public abstract void showBanner() throws Exception;
 
     /*
         Concrete method allowed in abstract class

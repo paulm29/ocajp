@@ -55,9 +55,8 @@
     ---
     - no pointers or operator overloading
 */
-package javabasics;
 
-import javabasics.lesson5.GarbageCollection;
+import lesson5.GarbageCollection;
 
 public class Lesson5 {
 

@@ -1,4 +1,4 @@
-package javabasics.lesson5;
+package lesson5;
 
 /*
     An object is eligible for garbage collection when it is no longer

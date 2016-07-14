@@ -1,4 +1,4 @@
-package datatypes.lesson1;
+package lesson1;
 
 /*
     Explicit casting is required when 'narrowing' types, i.e.

@@ -1,13 +1,12 @@
 /**
     1.2 Define the structure of a Java class
  */
-package javabasics; // package statement
 
 /*
     If classes are in the same package, they do not need package prefix.
     Otherwise, use lesson2.OtherClass
  */
-import javabasics.lesson2.B;
+import lesson2.B;
 
 
 

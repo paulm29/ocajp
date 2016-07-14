@@ -2,7 +2,6 @@
     2.4 Explain an Object's Lifecycle (creation, "dereference by reassignment"
     and garbage collection)
 */
-package datatypes;
 
 import static java.lang.Thread.sleep;
 

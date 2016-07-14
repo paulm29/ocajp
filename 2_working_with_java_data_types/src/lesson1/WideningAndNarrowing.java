@@ -1,4 +1,4 @@
-package datatypes.lesson1;
+package lesson1;
 
 /*
     - Widening is also known as Promotion, and occurs when two data

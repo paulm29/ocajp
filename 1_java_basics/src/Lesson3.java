@@ -4,13 +4,12 @@
 
     Note: in IntelliJ Idea, ALT + F12 will launch terminal (console) window
  */
-package javabasics; // package is optional, though use of 'default package' is against convention
 
 import java.io.Console;
 
 /**
  * Compile: javac javabasics/Lesson3.java
- * Run: java javabasics.Lesson3 firstArg secondArg
+ * Run: java Lesson3 firstArg secondArg
  * Note: on the commandline, you should be outside the package directory
  *
  * Other options: java -cp ".;C:\temp\someOtherLocation;c:\temp\myJar.jar" myPackage.MyClass

@@ -14,6 +14,11 @@ public interface TerminatorInterface extends RobotInterface {
     public static final String MODEL = "T1000";
 
     /*
+        A value must be assigned to a variable immediately
+     */
+    //public static int SPEED;
+
+    /*
         New in Java 8
         static methods are good for factories; allows client to not know about
         classes that implement the interface

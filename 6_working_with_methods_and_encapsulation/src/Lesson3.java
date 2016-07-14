@@ -16,12 +16,20 @@ public class Lesson3 {
         1. static fields initialized
         2. static initializers run (if any)
      */
+
     /*
      No-args constructor is needed as it NOT automatically added by compiler
      because another constructor is defined
       */
     public Lesson3() {
         this("Paul"); // call other constructor
+    }
+
+    /*
+        Careful. This is NOT a constructor! The exam may try to trip you out.
+     */
+    public void Lesson3() {
+        System.out.println("I'm not a constructor");
     }
 
     public Lesson3(String nickName) {
@@ -39,5 +47,6 @@ public class Lesson3 {
     public static void main(String[] args) {
         Lesson3 lesson3a = new Lesson3();
         Lesson3 lesson3b = new Lesson3("Bob");
+        lesson3a.Lesson3();
     }
 }

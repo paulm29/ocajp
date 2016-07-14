@@ -1,7 +1,6 @@
 /*
     2.5 Develop code that uses wrapper classes such as Boolean, Double, and Integer.
  */
-package datatypes;
 
 import java.util.ArrayList;
 

@@ -1,7 +1,6 @@
 /**
     1.4 Import lesson4 Java packages to make them accessible in your code
  */
-package javabasics;
 
 /*
     Note: subpackages of java.util (e.g. java.util.concurrent) are NOT imported

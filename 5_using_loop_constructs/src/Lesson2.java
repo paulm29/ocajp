@@ -69,6 +69,19 @@ public class Lesson2 {
             break;
         }
 
+        /*
+            We careful with not using braces. This is actually valid, but could
+            easily have gone wrong.
+         */
+        int num1 = 8;
+        int  num2 = 8;
+        for(int i =0; i < 3; i++)
+            if (num1 == num2)
+                try {
+
+                } catch (Exception e) {
+
+                }
 
         /*
             Enhanced for loop

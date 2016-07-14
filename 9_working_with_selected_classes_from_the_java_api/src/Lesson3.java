@@ -46,6 +46,11 @@ public class Lesson3 {
             LocalDateTime combines both LocalDate and LocalTime
          */
         LocalDateTime localDateTime = LocalDateTime.of(date,time);
+
+        /*
+            Current date and time
+         */
+        System.out.println("Now: " + LocalDateTime.now());
     }
 
     /*
@@ -98,7 +103,6 @@ public class Lesson3 {
     */
     public static void dateArithmetic() {
         Duration tenMinutes = Duration.ofMinutes(10);
-        Period.ofYears(1);
 
         int hour = 11;
         int minute = 00;
@@ -132,6 +136,10 @@ public class Lesson3 {
         else { // 0
             System.out.println("dates are equal");
         }
+
+        Period period = Period.ofYears(1);
+        period = Period.of(1,0,0); // alternatively
+
     }
 
 }

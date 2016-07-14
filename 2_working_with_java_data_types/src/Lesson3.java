@@ -7,7 +7,6 @@
     3. It's a static variable in class that encloses the variable
     4. It's a static import from a class that does not enclose the variable
  */
-package datatypes;
 
 public class Lesson3 {
     public int numOne = 3;

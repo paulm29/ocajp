@@ -16,6 +16,12 @@ public class Lesson1 {
         System.out.println(intArray.length);
 
         /*
+            This doesn't work though
+         */
+        int[] intArrayA;
+        //intArrayA = {1,2,3,4};
+
+        /*
             A longer syntax using new type[] { }
          */
         boolean[] booleanArray = new boolean[] {true,false};

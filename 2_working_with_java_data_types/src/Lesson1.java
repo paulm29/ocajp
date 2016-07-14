@@ -1,7 +1,6 @@
 /*
     2.1 Declare and initialize variables (including casting of primitive data types)
  */
-package datatypes;
 
 public class Lesson1
 {
@@ -65,6 +64,12 @@ public class Lesson1
             on the same line
          */
         int x = 1, y = 2, z = x + y;
+
+        /*
+            Careful with this one. Only two is initialised; you will get a
+            compile error if try to use one.
+         */
+        int one, two = 0;
 
         /*
             Values can be written in decimal, octal, hexadecimal and binary

@@ -1,7 +1,6 @@
 /*
     2.2 Differentiate between object reference variables and primitive variables
  */
-package datatypes;
 
 import java.util.Calendar;
 

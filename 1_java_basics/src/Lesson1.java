@@ -5,7 +5,6 @@
  * Javadoc multiple-line comment
  * @author Paul Robotham
  */
-package javabasics;
 
 /*
     Classes can only be public or default (package) access
