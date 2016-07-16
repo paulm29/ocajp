@@ -1,6 +1,5 @@
 *.iml
 *.class
-_contents.txt
 .idea/
 .contents/
 .tests/
