@@ -1,0 +1,31 @@
+8. Handling Exceptions
+
+8.1 Differentiate among checked exceptions, unchecked exceptions, and Errors
+Topics:
+    Error, Checked and Runtime exceptions
+    Exception hierarchy
+Tag: differentiate_exceptions
+
+8.2 Create a try-catch block and determine how exceptions alter normal program flow
+Topics:
+    try-catch and try-catch-finally
+    throws declaration
+    throw new Exception
+    try with resources
+Tag: try_catch_finally
+
+8.3 Describe the advantages of Exception handling
+Topics:
+    Benefits of exception handling
+Tag: exception_handling_benefits
+
+8.4 Create and invoke a method that throws an exception
+Topics:
+    declare or handle exceptions
+Tag: declare_or_handle
+
+8.5 Recognize common exception classes (such as NullPointerException,
+    ArithmeticException, ArrayIndexOutOfBoundsException, ClassCastException)
+Topics:
+    examples of common exceptions
+Tag: common_exception

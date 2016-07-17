@@ -1,7 +1,15 @@
 /**
- 1.5 Compare and contrast the features and components of Java such as:
- platform independence, object orientation, encapsulation, etc.
- */
+     1.5 Compare and contrast the features and components of Java such as:
+     platform independence, object orientation, encapsulation, etc.
+     Topics:
+     - encapsulation
+     - object-oriented
+     - performance
+     - platform independent
+     - robust
+     - simple
+     - secure
+*/
 
 /*
     Benefits of Java:
@@ -25,10 +33,9 @@
 
     Object-oriented
     ---
-    - objects have state and manage own state
-    - rather than procedural; more representative of problem domain
+    - objects have state and manage their own state
+    - more representative of problem domain; greater re-use
     - lower coupling, higher cohesion, changes more isolated
-    - greater re-use
     - less and easier maintenance
 
     Performance

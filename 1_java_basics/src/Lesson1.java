@@ -1,5 +1,8 @@
 /**
     1.1 Define the scope of variables
+    Topics
+    - dot operator and matching braces
+    - scopes: block, method, instance, class
 */
 /**
  * Javadoc multiple-line comment
@@ -10,17 +13,19 @@
     Classes can only be public or default (package) access
  */
 public class Lesson1 {
+    public static int a = 77;   // static class scope: Lesson1.y
+    private int b = 88;         // object scope: lesson1.y
 
-    public static int a = 77; // class scope: Lesson1.y
-    private int b = 88; // object scope: lesson1.y
-
-    // this is a constructor. It has no return type.
+    /*
+        This is a constructor. It has no return type.
+     */
     public Lesson1() {
         System.out.println("Class scope: " + Lesson1.a);
         System.out.println("Object scope: " + this.b);
     }
 
-    /*  <access> <optional> <return type>
+    /*
+        <access> <optional> <return type>
         optional modifier can come before optional modifier.
         access = private, (blank) default, protected, public
         optional = final, abstract (and a few others out of scope for OCA)

@@ -1,10 +1,14 @@
+/**
+    5.4 Compare loop constructs
+    Topics:
+        while vs do-while
+        while vs for
+        iterator vs for-each
+ */
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/*
-    Compare loop constructs
- */
 public class Lesson4 {
     /*
         while vs do-while

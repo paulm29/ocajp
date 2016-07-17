@@ -1,5 +1,8 @@
-/*
+/**
     5.2 Create and use for loops including the enhanced for loop
+    Topics:
+        for loop
+        enhanced for (for each)
  */
 import java.util.ArrayList;
 import java.util.List;

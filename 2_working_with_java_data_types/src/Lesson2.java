@@ -1,5 +1,8 @@
-/*
+/**
     2.2 Differentiate between object reference variables and primitive variables
+    Topics:
+         == operator with primitives and object references
+         method arguments: pass by value
  */
 
 import java.util.Calendar;

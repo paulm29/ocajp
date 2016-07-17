@@ -1,5 +1,9 @@
 /**
     1.4 Import lesson4 Java packages to make them accessible in your code
+    Topics:
+    - Class, wildcard and static imports
+    - packages and sub-packages
+    - import conflicts
  */
 
 /*
@@ -24,15 +28,15 @@ public class Lesson4 {
         ArrayList arrayList = new ArrayList();
 
          /*
-        Java has two date classes.
-        You need to avoid name class conflicts by using
-        fully qualified class names.
-        'Fully qualified' means the top level package and all subpackages
-        (not just subpackages).
-        As evident below, the more specific import (java.sql.Date)
-        is used by default, rather than the 'all' import (java.util.*)
+            Java has two date classes.
+            You need to avoid name class conflicts by using
+            fully qualified class names.
+            'Fully qualified' means the top level package and all subpackages
+            (not just subpackages).
+            As evident below, the more specific import (java.sql.Date)
+            is used by default, rather than the 'all' import (java.util.*)
          */
         java.util.Date date = new java.util.Date(); // imported java.util.*;
-        Date date2 = new Date(2000); // imported java.sql.Date;
+        Date date2 = new Date(2000);                // imported java.sql.Date;
     }
 }

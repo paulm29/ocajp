@@ -1,0 +1,14 @@
+4. Creating and Using Arrays
+
+4.1 Declare, instantiate, initialize and use a one-dimensional array
+Topics:
+    Three ways of creating an array
+    Populating an array using: braces, index, loop
+    Array length and equality
+    Utility methods: printing, copying, sorting, searching
+
+
+4.2 Declare, instantiate, initialize and use multi-dimensional array
+Topics:
+    Populating multi-dimensional arrays
+    Jagged arrays

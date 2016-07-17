@@ -1,0 +1,6 @@
+7. Working with Inheritance
+7.1 Describe inheritance and its benefits
+7.2 Develop code that demonstrates the use of polymorphism; including overriding and object type versus reference type
+7.3 Determine when casting is necessary
+7.4 Use super and this to access objects and constructors
+7.5 Use abstract classes and interfaces

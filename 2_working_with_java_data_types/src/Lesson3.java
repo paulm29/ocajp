@@ -1,13 +1,16 @@
-/*
+/**
     2.3 Know how to read or write to object fields
-
+    Topics:
+         dot operator
+         this
+ */
+/*
     Variables will be prefixed by a dot, unless:
     1. It's a method local variable
     2. It's a member variable with an implied this
     3. It's a static variable in class that encloses the variable
     4. It's a static import from a class that does not enclose the variable
  */
-
 public class Lesson3 {
     public int numOne = 3;
     public long numTwo = 10L;

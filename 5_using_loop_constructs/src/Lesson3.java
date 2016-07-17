@@ -1,5 +1,7 @@
-/*
-    Create and use do/while loops
+/**
+    5.3 Create and use do/while loops
+     Topics:
+        do-while loop
  */
 public class Lesson3 {
 

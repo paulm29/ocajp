@@ -1,5 +1,8 @@
-/*
+/**
     3.3 Create if and if/else and ternary constructs
+     Topics:
+         if/else if/else if/else
+         ternary operator
  */
 public class Lesson3 {
 

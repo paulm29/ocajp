@@ -1,8 +1,12 @@
-/*
+/**
     2.5 Develop code that uses wrapper classes such as Boolean, Double, and Integer.
+    Topics:
+         Wrapper classes: Byte, Character, Integer, Long, Float
+         Autoboxing
  */
 
 import java.util.ArrayList;
+import java.util.List;
 
 /*
     Wrapper objects allows us to treat primitive types as objects. For example,
@@ -16,11 +20,21 @@ public class Lesson5 {
 
     public static void main(String[] args) {
         /*
-            The old way
+            The old way, without autoboxing
          */
         int intPrimitive = 99;
         Integer intObject = Integer.valueOf(intPrimitive);
         intPrimitive = intObject.intValue();
+
+        System.out.println("Old way: " + intObject + " " + intPrimitive);
+
+        /*
+            Get an int from a String
+         */
+        int parsedInt = Integer.parseInt("2");  // primitive
+        // alternatively,
+        parsedInt = Integer.valueOf("2");       // object
+        System.out.println("Parsed string: " + parsedInt);
 
         /*
             The new way
@@ -31,5 +45,18 @@ public class Lesson5 {
 
         String type = list.get(0).getClass().getName();
         System.out.println(type); // java.lang.Integer
+
+        /*
+            A couple of traps
+         */
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.remove(1); // removes index 1, not the Integer 1
+        System.out.println(numbers);
+
+        List<Integer> heights = new ArrayList<>();
+        heights.add(null);
+        int h = heights.get(0); // NullPointerException
     }
 }

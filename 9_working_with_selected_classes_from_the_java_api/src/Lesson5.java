@@ -1,5 +1,8 @@
-/*
+/**
     9.5 Write a simple Lambda expression that consumes a Lambda Predicate expression
+    Topics:
+        Predicate interface
+        Lambda expression for Predicates
  */
 import java.util.ArrayList;
 import java.util.Arrays;

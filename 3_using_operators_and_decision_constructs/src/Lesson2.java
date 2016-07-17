@@ -1,8 +1,11 @@
+/**
+    3.2 Test equality between Strings and other objects using == and equals ()
+     Topics:
+         String literals vs String objects
+         Which objects implement equals(), and those that only provide reference equality
+ */
 import java.util.ArrayList;
 
-/*
-    3.2 Test equality between Strings and other objects using == and equals ()
- */
 public class Lesson2 {
 
     public static void main(String[] args) {
@@ -12,7 +15,6 @@ public class Lesson2 {
          */
         String s1 = "Hello";
         String s2 = "Hello";
-
         System.out.println(s1 == s2);       // true
         System.out.println(s1.equals(s2));  // true
 
@@ -21,7 +23,6 @@ public class Lesson2 {
          */
         String s3 = new String("Hello");
         String s4 = new String("Hello");
-
         System.out.println(s3 == s4);       // false
         System.out.println(s3.equals(s4));  // true
 
