@@ -1,12 +1,17 @@
-/*
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+import java.util.Date;
+/**
     9.3 Create and manipulate calendar data using classes from java.time.LocalDateTime,
     java.time.LocalDate, java.time.LocalTime, java.time.format.DateTimeFormatter,
     java.time.Period
+    Topics:
+        creating local dates and times
+        parsing
+        formatting
+        date/time arithmetic
  */
-import java.time.*;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
-
 public class Lesson3 {
     /*
         Dates and times are immutable, like Strings, so when calling methods
@@ -30,6 +35,12 @@ public class Lesson3 {
 
             You don't need to know ZonedDateTime for OCAJP exam
         */
+
+        /*
+            Current date and time
+         */
+        System.out.println("Now: " + LocalDateTime.now());
+
         int year = 2016;
         int month = 1; // 1 is January, not 0
         int day = 30;
@@ -40,7 +51,8 @@ public class Lesson3 {
         int hour = 11;
         int minute = 59;
         int second = 59;
-        LocalTime time = LocalTime.of(hour, minute, second);
+        int nanosecond = 200;
+        LocalTime time = LocalTime.of(hour, minute, second, nanosecond);
 
         /*
             LocalDateTime combines both LocalDate and LocalTime
@@ -48,9 +60,9 @@ public class Lesson3 {
         LocalDateTime localDateTime = LocalDateTime.of(date,time);
 
         /*
-            Current date and time
+            Invalid dates/times may cause a runtime exception
          */
-        System.out.println("Now: " + LocalDateTime.now());
+        //LocalDate.of(2016,Month.FEBRUARY,32);
     }
 
     /*
@@ -61,6 +73,12 @@ public class Lesson3 {
         String dt = "2016-07-16T11:59:59";
         LocalDateTime pdt = LocalDateTime.parse(dt, DateTimeFormatter.ISO_LOCAL_DATE_TIME);
         System.out.println(pdt);
+
+        DateTimeFormatter f = DateTimeFormatter.ofPattern("MM dd yyyy");
+        LocalDate date = LocalDate.parse("01 02 2015", f);
+        LocalTime time = LocalTime.parse("11:22");
+        System.out.println(date); // 2015-01-02
+        System.out.println(time); // 11:22
     }
 
     /*
@@ -75,27 +93,40 @@ public class Lesson3 {
         ss or s
      */
     public static void formatting() {
-        DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("yyyy/MM/dd");
-
         int year = 2016;
         int month = 1; // 1 is January, not 0
         int day = 30;
         LocalDate date = LocalDate.of(year, month, day);
 
         /*
+            Simple formatting using get methods
+         */
+        System.out.println("The year is " + date.getYear());
+
+        /*
             Two ways of formatting: using date class or format class
          */
+        DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+
         String dateString1 = date.format(dtf1);
         String dateString2 = dtf2.format(date);
 
         System.out.println("Dates: " + dateString1 + " " + dateString2);
+
+        /*
+            Predefined formats include DateTimeFormatter.ISO_LOCAL_DATE and
+            FormatStyle.SHORT, amongst many others
+         */
+        DateTimeFormatter shortDateTime = DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
+        System.out.println("Short format: " + shortDateTime.format(date));
     }
 
     /*
         Date arithmetic:
-        Period only deals with years, months, weeks and days
-        Duration deals with days and times.
+        - Period only deals with years, months, weeks and days
+        - Duration deals with days and times.
+        Both of these do not allow method chaining, only the last method called is used.
 
         Be careful with some methods, because it is possible to
         add minutes to a date, or add weeks to a time, both of which will

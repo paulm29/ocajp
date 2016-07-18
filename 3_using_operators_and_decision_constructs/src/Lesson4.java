@@ -1,5 +1,8 @@
-/*
+/**
     3.4 Use a switch statement
+     Topics:
+         Supported data types and values
+         case, break and default
  */
 public class Lesson4 {
 

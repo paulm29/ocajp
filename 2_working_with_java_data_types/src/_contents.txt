@@ -1,0 +1,32 @@
+2. Working With Java Data Types
+
+2.1 Declare and initialize variables (including casting of primitive data types)
+Topics:
+    Naming variables
+    Number systems
+    Primitive types
+    Declarations
+    Initializing variables
+    Widening and narrowing
+    Casting
+    Note: Strings covered later under Creating and Manipulating Strings
+
+2.2 Differentiate between object reference variables and primitive variables
+Topics:
+    == operator with primitives and object references
+    method arguments: pass by value
+
+2.3 Know how to read or write to object fields
+Topics:
+    dot operator
+    this
+
+2.4 Explain an Object's Lifecycle (creation, "dereference by reassignment" and garbage collection)
+Topics:
+    Referencing object on the heap
+    Garbage collection
+
+2.5 Develop code that uses wrapper classes such as Boolean, Double, and Integer.
+Topics:
+    Wrapper classes: Byte, Character, Integer, Long, Float
+    Autoboxing

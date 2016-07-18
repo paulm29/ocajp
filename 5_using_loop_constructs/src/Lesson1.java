@@ -1,5 +1,7 @@
-/*
+/**
     5.1 Create and use while loops
+    Topics:
+        while loop
  */
 public class Lesson1 {
 

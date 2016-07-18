@@ -1,0 +1,36 @@
+9. Working with Selected classes from the Java API
+
+9.1 Manipulate data using the StringBuilder class and its methods
+Tag: StringBuilder
+Topics:
+    construction and length/capacity
+    appending and inserting
+    updating and deleteing
+    extracting parts
+
+9.2 Creating and manipulating Strings
+Tag: String
+Topics:
+    creating
+    immutability
+    common string methods
+
+9.3 Create and manipulate calendar data using classes from java.time.LocalDateTime, java.time.LocalDate, java.time.LocalTime, java.time.format.DateTimeFormatter, java.time.Period
+Tag: time
+Topics:
+    creating local dates and times
+    parsing
+    formatting
+    date/time arithmetic
+
+9.4 Declare and use an ArrayList of a given type
+Tag: ArrayList
+Topics:
+    creating an ArrayList
+    common methods
+
+9.5 Write a simple Lambda expression that consumes a Lambda Predicate expression
+Tag: Lambda
+Topics:
+    Predicate interface
+    Lambda expression for Predicates

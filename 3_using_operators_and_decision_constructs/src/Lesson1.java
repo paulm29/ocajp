@@ -1,14 +1,38 @@
 /**
- * 3.1 Use Java operators; including parentheses to override operator precedence
+    3.1 Use Java operators; including parentheses to override operator precedence
+    Topics:
+        operators, operands and expressions
+        arithmetic operators and operator predecence
+        String concatenation using +
+        Promoting operands
+        increment and decrement
+        Shift operators
+        Comparison operators
+        Logical operators, including short-circuited
+        Assignment operators
+        Other operators
  */
 public class Lesson1 {
+
+    public static void main(String[] args) {
+        part1(); // operators, operands and expressions
+        part2(); // arithmetic operators and operator precedence
+        part3(); // String concatenation using +
+        part4(); // Promoting operands
+        part5(); // Increment and Decrement
+        part6(); // Shift operators
+        part7(); // Comparison operators
+        part8(); // Logical operators
+        part9(); // Assignment operators
+        part10(); // Other operators: instanceof, dot, []
+    }
 
     /*
         3.1.1 operators, operands and expressions
      */
     public static void part1() {
          /*
-            Three operators:
+            Three types of operators:
             - infix: expr <op> expr, e.g. 2 + 2
             - prefix: <op> expr, e.g. -5
             - postfix: expr <op>, e.g. i++
@@ -57,9 +81,17 @@ public class Lesson1 {
             Precedence
             ---
             Brackets: ( )
-            Unary: + - i++ i-- !
-            * /
+            Post-unary: n++ n--
+            Pre-unary: ++n --n
+            Other Unary: +n -n !n
+            * / %
             + -
+            Relational: <, >, <=, >=, instanceof
+            Equal to/not equal to ==, !=
+            Logical operators &, ^, |
+            Short-circuit logical operators &&, ||
+            Ternary ?
+            Assignment operators = += etc.
          */
 
 
@@ -87,6 +119,15 @@ public class Lesson1 {
         3.1.4 Promoting operands
      */
     public static void part4() {
+
+        /*
+            Numeric Promotion Rules
+            1. Java automatically promotes values to the larger data type
+            3. byte, short, and char, are first promoted to int
+            4. After all promotion has occurred and the operands have the same data
+                type, the resulting value will have the same data type as its
+                promoted operands.
+         */
         /*
             By default, whole number literals are ints and decimal numbers
             are double.
@@ -108,6 +149,17 @@ public class Lesson1 {
         short s = 99;
         byte b2 = 10;
         //s = s + b2; // compiler error, incompatible types, int required
+
+        /*
+            An exception are the compound assignment operators: += -= -- ++
+            They result in the same data type as the original operand
+         */
+        short s1 = 1;
+        short s2 = ++s1;
+
+        long x = 10;
+        int y = 5;
+        y *= x;
     }
 
     /*
@@ -117,8 +169,8 @@ public class Lesson1 {
         /*
             Increment and Decrement
             Remember prefix and postfix forms:
-            a++
             ++a
+            a++
          */
         for(int i = 0; i < 5; i++) {
             System.out.println();
@@ -227,6 +279,8 @@ public class Lesson1 {
             evaluating the rest of the expression, as it will never be not false;
             &&
             ||
+            These are useful for checking whether an object is null BEFORE
+            examining other properties, to avoid a NullPointerException
 
             Bitwise operators (shouldn't be on exam)
             ~ bitwise NOT
@@ -352,16 +406,5 @@ public class Lesson1 {
         System.out.println(isNumber);
     }
 
-    public static void main(String[] args) {
-        part1(); // operators, operands and expressions
-        part2(); // arithmetic operators and operator precedence
-        part3(); // String concatenation using +
-        part4(); // Promoting operands
-        part5(); // Increment and Decrement
-        part6(); // Shift operators
-        part7(); // Comparison operators
-        part8(); // Logical operators
-        part9(); // Assignment operators
-        part10(); // Other operators
-    }
+
 }

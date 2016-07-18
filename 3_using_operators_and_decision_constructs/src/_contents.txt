@@ -1,0 +1,29 @@
+3. Using Operators and Decision Constructs
+
+3.1 Use Java operators; including parentheses to override operator precedence
+Topics:
+    operators, operands and expressions
+    arithmetic operators and operator predecence
+    String concatenation using +
+    Promoting operands
+    increment and decrement
+    Shift operators
+    Comparison operators
+    Logical operators, including short-circuited
+    Assignment operators
+    Other operators
+
+3.2 Test equality between Strings and lesson4 objects using == and equals ()
+Topics:
+    String literals vs String objects
+    Which objects implement equals(), and those that only provide reference equality
+
+3.3 Create if and if/else and ternary constructs
+Topics:
+    if/else if/else if/else
+    ternary operator
+
+3.4 Use a switch statement
+Topics:
+    Supported data types and values
+    case, break and default

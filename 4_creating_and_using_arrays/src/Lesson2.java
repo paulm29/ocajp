@@ -1,15 +1,19 @@
-/*
+/**
     4.2 Declare, instantiate, initialize and use multi-dimensional array
+    Topics:
+        Populating multi-dimensional arrays
+        Jagged arrays
  */
 public class Lesson2 {
 
     public static void main(String args[]) {
-       char[][] board = new char[3][3];
-        /* can also be declared as:
-        char[] board[]
-        or
-        char board[][]
+        /*
+            can also be declared as:
+            char[] board[]
+            or
+            char board[][]
          */
+       char[][] board = new char[3][3];
 
         /* set up the board */
         for (int i = 0; i < 3; i++) {
@@ -32,13 +36,16 @@ public class Lesson2 {
                 {'_','_','_'},
         };
 
-        char[][] board4 = new char[3][4];
+
         /*
             This is valid, however the 2nd dimension still needs to be instantiated
           */
-        char[][] board5 = new char[3][];
-        //char[][] board5b = new char[][3]; // can't do this though
-        //char[][] board5c = new char[][]; // have to actually instantiate it
+        char[][] board4 = new char[3][];
+        board4[0] = new char[3];
+        board4[1] = new char[3];
+        board4[2] = new char[3];
+        //char[][] board5a = new char[][3]; // can't do this though
+        //char[][] board5b = new char[][]; // have to actually instantiate it
 
         /* a 3d array */
         char[][][] board6;

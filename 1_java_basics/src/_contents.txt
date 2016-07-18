@@ -1,0 +1,36 @@
+1. Java Basics
+
+1.1 Define the scope of variables
+Topics:
+    dot operator and matching braces
+    scopes: block, method, instance, class
+
+1.2 Define the structure of a Java class
+Topics:
+    Naming of files and identifiers
+    Structure: package, import, constructor, class, member, method, initializer block (static, instance)
+    Touched on: varargs
+
+1.3 Create executable Java applications with a main method; run a Java program
+from the command line; including console output.
+Topics:
+    main method
+    javac.exe, java.exe, classpath
+    System.out.print(), java.io.Console
+
+1.4 Import lesson4 Java packages to make them accessible in your code
+Topics:
+    Class, wildcard and static imports
+    packages and sub-packages
+    import conflicts
+
+1.5 Compare and contrast the features and components of Java such as: platform
+independence, object orientation, encapsulation, etc.
+Topics:
+    encapsulation
+    object-oriented
+    performance
+    platform independent
+    robust
+    simple
+    secure

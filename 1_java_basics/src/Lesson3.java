@@ -1,6 +1,10 @@
 /**
     1.3 Create executable Java applications with a main method;
     run a Java program from the command line; including console output.
+    Topics:
+    - main method
+    - javac.exe, java.exe, classpath
+    - System.out.print(), java.io.Console
 
     Note: in IntelliJ Idea, ALT + F12 will launch terminal (console) window
  */
