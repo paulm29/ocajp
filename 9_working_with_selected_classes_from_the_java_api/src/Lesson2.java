@@ -1,4 +1,4 @@
-/*
+/**
     9.2 Creating and manipulating Strings
  */
 

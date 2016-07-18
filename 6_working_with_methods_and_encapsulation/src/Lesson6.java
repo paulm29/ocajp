@@ -1,6 +1,6 @@
-/*
+/**
     6.6 Determine the effect upon object references and primitive values
-    when they are passed into methods that change the values
+    when they are passed into methods that change the values.
 
     Understanding this topic is made difficult by the terms 'pass by value'
     and 'pass by reference'. Throw out BOTH of the terms.

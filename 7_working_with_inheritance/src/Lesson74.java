@@ -1,4 +1,4 @@
-/*
+/**
     7.4 Use super and this to access objects and constructors
  */
 public class Lesson74 {
@@ -41,6 +41,7 @@ class Subclass extends Lesson74 {
         we need to define one and call super() ourselves
      */
     public Subclass(int num) {
+        // System.out.println("Creating subclass"); // super must be first
         super(num); // call superclass constructor
         System.out.println("Creating subclass");
     }

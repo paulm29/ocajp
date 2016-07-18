@@ -1,4 +1,4 @@
-/*
+/**
     6.5 Apply encapsulation principles to a class
  */
 /*
@@ -14,6 +14,8 @@
     - Setter methods begin with set.
     - The method name must have a prefix of set/get/is, followed by the first
     letter of the property in uppercase, followed by the rest of the property name.
+
+    An object following these conventions and without setters is 'immutable'.
  */
 public class Lesson5 {
     private boolean gotFan;

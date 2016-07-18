@@ -1,4 +1,4 @@
-/*
+/**
     9.1 Manipulate data using the StringBuilder class and its methods
  */
 public class Lesson1 {

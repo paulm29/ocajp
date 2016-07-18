@@ -1,4 +1,4 @@
-/*
+/**
     7.1 Describe inheritance and its benefits
 
     Parent terms:

@@ -1,4 +1,4 @@
-/*
+/**
     9.4 Declare and use an ArrayList of a given type
  */
 import java.util.ArrayList;

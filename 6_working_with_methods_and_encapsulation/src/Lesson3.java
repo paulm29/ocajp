@@ -1,4 +1,4 @@
-/*
+/**
     6.3 Create and overload constructors; including impact on default constructors
  */
 public class Lesson3 {
@@ -8,18 +8,22 @@ public class Lesson3 {
         Order of construction:
         1. java.lang.Object created
         2. super() - Call parent class constructors
-        3. Field initialization
-        4. Instance initializer (if any)
-        4. this() - Constructor runs
+        3. static fields initialization
+        4. static initializers (if any)
+        5. instance field initialization
+        6. instance initializers (if any)
+        7. this() - Constructor runs
 
-        Note: prior to construction,
-        1. static fields initialized
-        2. static initializers run (if any)
+        Note: there may be multiple static and instance initializers. They run
+        in the order that they appear in the file.
      */
 
     /*
-     No-args constructor is needed as it NOT automatically added by compiler
-     because another constructor is defined
+         No-args constructor is needed as it NOT automatically added by compiler
+         because another constructor is defined.
+         The exam may use the term 'default constructor' for the constructor
+         automatically added by the compiler.
+         Like super(), this() must be the first statement in the constructor.
       */
     public Lesson3() {
         this("Paul"); // call other constructor

@@ -1,4 +1,4 @@
-/*
+/**
     7.3 Determine when casting is necessary
  */
 import lesson2.Animal;

@@ -1,4 +1,4 @@
-/*
+/**
     9.5 Write a simple Lambda expression that consumes a Lambda Predicate expression
  */
 import java.util.ArrayList;
@@ -50,6 +50,15 @@ public class Lesson5 {
         System.out.println(results);
         results = getMatching(people,p -> p.age < 21); // shorthand
         System.out.println(results);
+
+        /*
+            Other valid expressions:
+            (() -> true); // 0 parameters
+            (a -> a.startsWith("test")); // 1 parameter
+            ((String a) -> a.startsWith("test")); // 1 parameter
+            ((a, b) -> a.startsWith("test")); // 2 parameters
+            ((String a, String b) -> a.startsWith("test")); // 2 parameters
+         */
     }
 
 }

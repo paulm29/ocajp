@@ -1,12 +1,12 @@
-import java.time.*;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
-
 /*
     9.3 Create and manipulate calendar data using classes from java.time.LocalDateTime,
     java.time.LocalDate, java.time.LocalTime, java.time.format.DateTimeFormatter,
     java.time.Period
  */
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+
 public class Lesson3 {
     /*
         Dates and times are immutable, like Strings, so when calling methods
