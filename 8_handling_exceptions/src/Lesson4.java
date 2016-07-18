@@ -5,12 +5,15 @@ import java.io.IOException;
 
 public class Lesson4 {
 
-    // same as method from lesson 1
+    /*
+        Note: the catch block can catch different types of exceptions using |
+        so long as those exception do not have a hierarchical relationship.
+      */
     private void throwException() {
         try {
-            throw new Exception("bad!");
+            throw new NullPointerException("bad!");
         }
-        catch(Exception e) {
+        catch(NullPointerException | IllegalArgumentException e) {
             System.out.println("Caught exception thrown above");
             System.out.println(e.toString());
         }

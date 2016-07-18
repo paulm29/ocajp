@@ -46,9 +46,28 @@ public class Lesson5 {
         String type = list.get(0).getClass().getName();
         System.out.println(type); // java.lang.Integer
 
+        operations();
+        traps();
+    }
+
+    private static void operations() {
         /*
-            A couple of traps
+            Integral wrapper classes can perform arithmetic
          */
+        int a = 2, b = 4, result = 0;
+        result = new Integer(a) + new Integer(b);
+        System.out.println(result);
+
+        /*
+            Wrapper classes have equals methods
+         */
+        Integer i1 = new Integer(1);
+        Integer i2 = new Integer(1);
+        System.out.println(i1 == i2);       // false
+        System.out.println(i1.equals(i2));  // true
+    }
+
+    private static void traps() {
         List<Integer> numbers = new ArrayList<>();
         numbers.add(1);
         numbers.add(2);

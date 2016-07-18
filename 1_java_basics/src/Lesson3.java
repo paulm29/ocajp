@@ -66,6 +66,9 @@ public class Lesson3 {
      Note "Bill Smith" in quotes as one argument, not two
      */
     public static void main(String... args) {
+        /*
+            If no args are passed, the array is not null, but it is zero length.
+         */
         for (int i=0;i<args.length;i++) {
             System.out.println(args[i]);
         }

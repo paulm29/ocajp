@@ -21,6 +21,8 @@ public class Lesson2 {
         two = 2;
         //three = 3;    // compile error, trying to re-assign a final variable
         //two = 4;      // compiler, trying to re-assign a final variable
+        // throw new NullPointerException(); // compile error
+        // if(true) throw new NullPointerException(); // ExceptionInInitializerError
     }
 
     public static String myName = "Paul";

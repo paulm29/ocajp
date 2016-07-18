@@ -56,6 +56,9 @@ public class Lesson2 {
         Scanner in = new Scanner(new FileReader(FILENAME));
     }
 
+    /*
+        Any Throwable, including RuntimeException and Error can be thrown
+     */
     private void throwException() {
         try {
             throw new Exception("bad!");

@@ -35,5 +35,10 @@ public class Lesson3 {
         if(guess == 42)
             System.out.println("That is the meaning of life");
             System.out.println("This is not inside the if!!!");
+
+        /*
+            This is valid, although you shouldn't need it for exam, or ever.
+         */
+        if (false) ; else ;
     }
 }
