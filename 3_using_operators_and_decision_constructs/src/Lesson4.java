@@ -38,6 +38,7 @@ public class Lesson4 {
         //int num = 5; // will use default
         switch(num) {
             case 1:
+            // case 1: // compile error: duplicate value for case
             case 2:
                 System.out.println("2");
                 //break;

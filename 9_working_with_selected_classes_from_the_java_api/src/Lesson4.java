@@ -32,6 +32,11 @@ public class Lesson4 {
         ArrayList<String> myListString2 = new ArrayList<>();
 
         /*
+            So is just using generics on one side of a declaration
+         */
+        ArrayList<String> myListString3 = new ArrayList();
+
+        /*
             Using the List interface.
          */
         List<String> myListImpl = new ArrayList<String>();
