@@ -40,5 +40,15 @@ public class Lesson3 {
             This is valid, although you shouldn't need it for exam, or ever.
          */
         if (false) ; else ;
+
+        /*
+            The dangling else problem: the else belongs to the innermost if,
+            not the outer as the indentation suggests
+         */
+        args = new String[]{"open"," no one"};
+        if (args[0].equals("open"))
+            if (args[1].equals("someone"))
+                System.out.println("Hello!");
+        else System.out.println("Go away "+ args[1]);
     }
 }

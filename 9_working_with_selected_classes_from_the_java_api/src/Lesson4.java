@@ -87,6 +87,12 @@ public class Lesson4 {
         System.out.println("sorted array: " + arrayBacked);
 
         /*
+            subList
+         */
+        List<String> first = arrayBacked.subList(0,1); // get first element
+        System.out.println(first);
+
+        /*
             Remove element using Predicate and Lambda expression
          */
         List<Integer> numbers = new ArrayList<>();

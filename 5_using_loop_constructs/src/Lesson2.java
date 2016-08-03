@@ -56,8 +56,10 @@ public class Lesson2 {
             for() and for(;) won't work though
          */
         for(;;) {
+            ; // isolated semi-colon is not a problem, but unnecesarry
             break;
         }
+
 
         for(int i = 0;;) {
             break;

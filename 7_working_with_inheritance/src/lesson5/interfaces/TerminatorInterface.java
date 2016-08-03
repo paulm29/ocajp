@@ -10,6 +10,11 @@ public interface TerminatorInterface extends RobotInterface {
             properties
          - A value must be assigned a value immediately (no constructor or instance
             initializer)
+
+         Note that if Aclass implements this interface, MODEL can be accessed in 3 ways:
+         - Aclass.MODEL
+         - new Aclass().MODEL
+         - TerminatorInterface.MODEL
       */
     public static final String MODEL = "T1000";
 
@@ -22,7 +27,11 @@ public interface TerminatorInterface extends RobotInterface {
         New in Java 8
         static methods are good for factories; allows client to not know about
         classes that implement the interface
-        Note: public is redundant
+
+         Note that if Aclass implements this interface, getOne can be accessed in 3 ways:
+         - Aclass.getOne
+         - new Aclass().getOne
+         - TerminatorInterface.getOne
      */
     static TerminatorInterface getOne(int year) {
         if(year == 1984) {

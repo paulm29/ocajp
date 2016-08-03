@@ -76,6 +76,12 @@ public class Lesson1 {
         String[] myStrings = new String[6];
         System.out.println(myStrings.length); // length is six, not 0
 
+        /*
+            Can have a zero-length array. In main(String[] args), args can be a zero length array
+         */
+        int[] zeroLength = new int[0];
+        System.out.println(zeroLength[0]);
+
         //myStrings[myStrings.length] = "hi"; // ArrayIndexOutOFBounds exception
         myStrings[myStrings.length-1] = "hi"; // fine
 

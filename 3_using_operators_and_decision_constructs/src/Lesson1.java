@@ -80,6 +80,7 @@ public class Lesson1 {
         /*
             Precedence
             ---
+            . (dot operator)
             Brackets: ( )
             Post-unary: n++ n--
             Pre-unary: ++n --n
@@ -92,6 +93,9 @@ public class Lesson1 {
             Short-circuit logical operators &&, ||
             Ternary ?
             Assignment operators = += etc.
+
+            Remember that = has lowest precedence, as this may come up in the
+            exam.
          */
 
 

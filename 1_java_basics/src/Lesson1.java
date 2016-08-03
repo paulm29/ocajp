@@ -35,11 +35,13 @@ public class Lesson1 {
     final public void doStuff3() {}
 
     public void doStuff(int c) {
+        int b = 1; // b in doStuff 'shadows' the b instance variables
         int d;
         d = 11;
         double e; // scope of c and d is entire method (local scope)
         e = 10.0;
 
+        System.out.println("Method scope: " + b);
         System.out.println("Method scope: " + c);
         System.out.println("Method scope: " + d);
         System.out.println("Method scope: " + e);

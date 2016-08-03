@@ -20,13 +20,16 @@
             - OutOfMemoryError
         - Exception
             - (Checked - extends Exception)
-                - IOException
+                - IOException (used by programmer)
                 - SQLException
             - RuntimeException
-                - NullPointerException
                 - ClassCastException
                 - IndexOutOfBoundsException
-                - NumberFormatException
+                - NullPointerException
+                - NumberFormatException (used by programmer)
+                - IllegalArgumentException (used by programmer)
+                - IllegalStateException (used by programmer)
+                - SecurityException (used by programmer)
 */
 
 public class Lesson1 {

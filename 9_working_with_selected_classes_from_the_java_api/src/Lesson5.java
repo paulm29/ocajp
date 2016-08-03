@@ -9,6 +9,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
+/*
+    (parameter list) OR single_variable_without_type -> { regular lines of code } OR just_an_expression_without_semicolon
+ */
 public class Lesson5 {
 
     public static List<Person> getMatching(List<Person> ls,
@@ -57,10 +60,10 @@ public class Lesson5 {
         /*
             Other valid expressions:
             (() -> true); // 0 parameters
-            (a -> a.startsWith("test")); // 1 parameter
-            ((String a) -> a.startsWith("test")); // 1 parameter
-            ((a, b) -> a.startsWith("test")); // 2 parameters
-            ((String a, String b) -> a.startsWith("test")); // 2 parameters
+            (a -> a.startsWith("traps")); // 1 parameter
+            ((String a) -> a.startsWith("traps")); // 1 parameter
+            ((a, b) -> a.startsWith("traps")); // 2 parameters
+            ((String a, String b) -> a.startsWith("traps")); // 2 parameters
          */
     }
 

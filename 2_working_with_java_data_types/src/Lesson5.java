@@ -30,8 +30,11 @@ public class Lesson5 {
 
         /*
             Get an int from a String
+            Note: none of the wrapper classes have a no-args constructor
          */
         int parsedInt = Integer.parseInt("2");  // primitive
+        // alternatively,
+        parsedInt = new Integer("2");
         // alternatively,
         parsedInt = Integer.valueOf("2");       // object
         System.out.println("Parsed string: " + parsedInt);
@@ -47,6 +50,7 @@ public class Lesson5 {
         System.out.println(type); // java.lang.Integer
 
         operations();
+        assignments();
         traps();
     }
 
@@ -57,6 +61,8 @@ public class Lesson5 {
         int a = 2, b = 4, result = 0;
         result = new Integer(a) + new Integer(b);
         System.out.println(result);
+        int result2 = 5 + new Integer(3);
+        System.out.println(result2);
 
         /*
             Wrapper classes have equals methods
@@ -65,6 +71,32 @@ public class Lesson5 {
         Integer i2 = new Integer(1);
         System.out.println(i1 == i2);       // false
         System.out.println(i1.equals(i2));  // true
+    }
+
+    private static void assignments() {
+        Integer i1 = 1;
+        Integer i2 = new Integer(1);
+        int i3 = 1;
+        Byte b1 = 1;
+        Long g1 = 1L;
+
+        // i1 == i2 => false
+        // i1 == i3 => true
+        // i1 == b1 => Will not compile
+        // i1.equals(i2) => true
+        // i1.equals(g1) => false
+        // i1.equals(b1) => false
+
+        /*
+        i1 == i2 will return false because both are pointing to different object.
+        i1 == i3 will return true because one operand is a primitive int and so the other will be unboxed and then the value will be compared.
+        i1 == b1 will not even compile because type of i1 and b1 references are classes that are not in the same class hierarchy. So == knows at compile time itself that they can't point to the same object.
+        i1.equals(i2) will return true because both are Integer objects and both have the value 1.
+        i1.equals(b1) and i1.equals(g1) will return false because they are pointing to objects of different types.
+
+        Signature of equals method is : boolean equals(Object o); So it can take any object hence there will be no compilation error.
+        Further, The equals methods of all wrapper classes first check if the two object are of same class or not. If not, they immediately return false.
+        */
     }
 
     private static void traps() {

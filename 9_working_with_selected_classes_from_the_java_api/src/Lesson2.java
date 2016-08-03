@@ -14,6 +14,8 @@ import java.util.Date;
 public class Lesson2 {
 
     public static void main(String... args) {
+        String String = "String String is valid!";
+
         /*
             Strings are immutable
          */
@@ -28,6 +30,13 @@ public class Lesson2 {
         System.out.println(b); // 12, not 123
 
         /*
+            null works unusually
+         */
+        String s = null;
+        s += " yo";
+        System.out.println(s); // "null yo" , not " yo"
+
+        /*
             Although strings are immutable, it is common to chain methods
          */
         String result = "HeLlO ".trim().toLowerCase().replace('e', 'E');
@@ -36,7 +45,7 @@ public class Lesson2 {
         /*
             A few ways to create a string - not exhaustive
          */
-        String s = "Hello, World";
+        String s1 = "Hello, World";
         String s2 = new String("a string");
         String s3 = new String(new StringBuilder());
         String s4 = new String(new char[]{'a','b','c'});
@@ -99,5 +108,22 @@ public class Lesson2 {
             boolean .contains
             https://docs.oracle.com/javase/7/docs/api/index.html?java/lang/String.html
          */
+
+        /*
+            You may come across the intern() method, which I never used in my life.
+            See https://dzone.com/articles/string-interning-what-why-and
+            Normally the two strings below would result in false when using ==
+            intern treats them as constants
+         */
+        String i1 = new String("hello");
+        String i2 = new String("hello");
+        if(i1 != i2) {
+            System.out.println("Strings not equal");
+        }
+        if(i1.intern() == i2.intern()) {
+            System.out.println("Strings equal");
+        }
+
+
     }
 }

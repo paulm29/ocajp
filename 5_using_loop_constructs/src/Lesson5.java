@@ -39,6 +39,10 @@ public class Lesson5 {
         }
     }
 
+    /*
+        break LABEL; and continue LABEL; may only be used within the
+        block that has the label
+     */
     public static void breakAndContinueWithLabels() {
     /*
         Skip 7 and above

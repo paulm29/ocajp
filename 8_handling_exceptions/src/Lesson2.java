@@ -14,6 +14,12 @@ public class Lesson2 {
     */
     private static final String FILENAME = "C:\\projects\\ocajp\\8_handling_exceptions\\src\\filename.txt";
 
+    /*
+        Constructors can throw exceptions too.
+     */
+    public Lesson2() throws RuntimeException {
+
+    }
 
     /*
         First catch block should be more specific than the next otherwise
@@ -35,7 +41,8 @@ public class Lesson2 {
             /*
                 IOException must be possible in try
              */
-            ioe.printStackTrace();
+            System.out.println(ioe);   // print exception class and message
+            ioe.printStackTrace();  // print stack trace (duh!)
         }
         catch(Exception e) { // broader exception next
             e.printStackTrace();
@@ -114,6 +121,24 @@ public class Lesson2 {
 
     }
 
+    private static void unreachableCode() {
+        try {
+            System.out.println("Try");
+            return;
+        }
+        catch(Exception e) {
+            System.out.println("Exception");
+            return;
+        }
+        finally {
+            System.out.println("Run anyway");
+        }
+        /*
+            The below is unreachable
+         */
+        //return;
+    }
+
 
     public static void main(String[] args) {
         /*
@@ -149,5 +174,6 @@ public class Lesson2 {
         String result = lesson2.complexExample();
         System.out.println(result);
 
+        unreachableCode();
     }
 }

@@ -108,6 +108,17 @@ public class Lesson1 {
          */
         int x = 1, y = 2, z = x + y;
 
+        /*
+            The below is known as "chaining", where you use multiple = with no
+            comma. You cannot do this while declaring variables, so
+            int i = j = k = 9; is invalid
+            This is valid however, because b and c are already declared:
+            int  b = 0, c = 0;   
+            int a = b = c = 100;
+         */
+        int i, j, k;
+        i = j = k = 9;
+
         // int x2, int y2;      // compile error, interpreted as 2 different types
         // int x3 , String s;   // compile error
 
@@ -127,6 +138,7 @@ public class Lesson1 {
         // double notByDecimal = 1000_.00; // DOES NOT COMPILE
         double legal = 1_00_0.0_0; // this one compiles
 
+        int multiple = 1___00; // multiple underscores are legal
 
         /*
             Null cannot be used with primitives, only objects like Strings
